@@ -26,12 +26,12 @@ def docView(root):
     tableDocentes["columns"] = (
         "Legajo", "Nombre", "DNI", "Dirección", "Telefono", "Tel. Urgencia", "Titulo", "Materia")
     tableDocentes.column("#0", width=20, anchor=CENTER)
-    tableDocentes.column("Legajo", width=50, anchor=CENTER)
+    tableDocentes.column("Legajo", width=75, anchor=CENTER)
     tableDocentes.column("Nombre", width=100, anchor=CENTER)
-    tableDocentes.column("DNI", width=50, anchor=CENTER)
+    tableDocentes.column("DNI", width=75, anchor=CENTER)
     tableDocentes.column("Dirección", width=100, anchor=CENTER)
-    tableDocentes.column("Telefono", width=100, anchor=CENTER)
-    tableDocentes.column("Tel. Urgencia", width=100, anchor=CENTER)
+    tableDocentes.column("Telefono", width=75, anchor=CENTER)
+    tableDocentes.column("Tel. Urgencia", width=75, anchor=CENTER)
     tableDocentes.column("Titulo", width=100, anchor=CENTER)
     tableDocentes.column("Materia", width=100, anchor=CENTER)
 
