@@ -1,6 +1,7 @@
 from tkinter import ttk
 from tkinter import *
-from personal_view import personalView
+from views.personal_view import personalView
+from views.docente_view import docView
 
 # Creando vista
 root = Tk()
@@ -18,7 +19,7 @@ barraArchivo.add_command(label="Salir", command=root.destroy)
 
 # Menú Agenda
 barraAgenda.add_command(label="Alumnos")
-barraAgenda.add_command(label="Docentes")
+barraAgenda.add_command(label="Docentes", command=lambda: docView(root))
 barraAgenda.add_command(label="Personal", command=lambda: personalView(root))
 barraAgenda.add_command(label="Directivos")
 
